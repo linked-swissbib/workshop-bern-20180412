@@ -1,0 +1,16 @@
+
+http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&qtxt=PREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+dbo%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0APREFIX+dbp%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fproperty%2F%3E%0D%0APREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0A%0D%0ASELECT+%3Fauthor+%3Fwork+%3Fdate+%0D%0AFROM+%3Chttp%3A%2F%2Fdbpedia.org%2F%3E+%0D%0AWHERE+%7B%0D%0A+++++++%3Fauthor+rdf%3Atype+dbo%3AWriter+.%0D%0A+++++++%3Fauthor+dbo%3AnotableWork+%3Fwork+.%0D%0A+++++++%3Fwork+dbp%3AreleaseDate+%3Fdate+%0D%0A%7D+ORDER+BY+DESC%28%3Fdate%29%0D%0ALIMIT+100%0D%0A&format=text%2Fhtml&CXML_redir_for_subjs=121&CXML_redir_for_hrefs=&timeout=30000&debug=on
+
+
+Teile der Abfrage (Triplepattern)
+
+a) Gib mir alle Personen vom Typ dbo:Writer (alle Autoren)
+b) nimm alle diese Fakten (Triple) und suche nach Fakten für die gilt:
+der gefundene Autor hat ein bekanntes Werk geschrieben (Verlinkung dbo:notableWork)
+c) Gib mir zusätzlich das Publizierungsdatum für das bekannte Werk
+
+Sortiere das Ergebnis in absteigend
+
+Das Ergebnis soll den Autor, das bekannte Werk und das Publizierungsdatum enthalten
+
+
