@@ -9,7 +9,7 @@ b) nimm alle diese Fakten (Triple) und suche nach Fakten für die gilt:
 der gefundene Autor hat ein bekanntes Werk geschrieben (Verlinkung dbo:notableWork)
 c) Gib mir zusätzlich das Publizierungsdatum für das bekannte Werk
 
-Sortiere das Ergebnis in absteigend
+Sortiere das Ergebnis absteigend
 
 Das Ergebnis soll den Autor, das bekannte Werk und das Publizierungsdatum enthalten
 
